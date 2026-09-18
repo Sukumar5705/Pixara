@@ -63,7 +63,7 @@ const publishGallery = async (req, res) => {
         await event.save();
 
         // Use FRONTEND_URL from env (fallback for now)
-        const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
+        const frontendUrl = process.env.FRONTEND_URL || "https://pixara-sigma.vercel.app/";
 
         res.status(201).json({
             success: true,

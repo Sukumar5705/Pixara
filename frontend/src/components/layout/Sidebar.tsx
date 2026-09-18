@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import {
-  Camera,
   Home,
   CalendarDays,
   Users,
@@ -132,12 +131,12 @@ const Sidebar = ({ onClose }: SidebarProps) => {
     <aside className="flex h-full w-[250px] shrink-0 flex-col bg-white border-r border-[#E4E8EE]">
       {/* Brand */}
       <div className="flex items-center gap-2.5 px-5 py-5 border-b border-[#E4E8EE]">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1769FF]">
-          <Camera size={16} className="text-white" strokeWidth={2.5} />
+        <div className="flex h-8 w-8 items-center justify-center">
+          <img src="/image.png" alt="Pixara" className="h-full w-full object-contain" />
         </div>
         <div>
           <span className="text-[15px] font-extrabold tracking-tight text-[#111B33]">
-            Photo<span className="text-[#1769FF]">Share</span>
+            Pixara
           </span>
           <p className="text-[10px] font-medium text-[#8290A5] leading-none mt-0.5">
             Capture. Collaborate. Share.

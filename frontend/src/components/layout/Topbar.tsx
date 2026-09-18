@@ -19,7 +19,7 @@ const Topbar = () => {
     routeMeta[pathname] ??
     (pathname.startsWith("/app/events/")
       ? { title: "Event Detail", crumb: "Home › Events › Detail" }
-      : { title: "PhotoShare", crumb: "Home" });
+      : { title: "Pixara", crumb: "Home" });
 
   return (
     <header className="sticky top-0 z-40 flex h-[64px] shrink-0 items-center justify-between gap-4 border-b border-[#E4E8EE] bg-white px-6">

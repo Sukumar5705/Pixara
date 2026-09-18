@@ -1,5 +1,5 @@
 import React, { useRef, useState, useCallback, useEffect } from "react";
-import { Camera, LockKeyhole, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
+import { LockKeyhole, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
 
 const PIN_LENGTH = 6;
 
@@ -107,11 +107,11 @@ const PinGate: React.FC<PinGateProps> = ({ apiError, isLoading, onSubmit }) => {
     <div className="min-h-screen bg-[#F7F9FC] flex flex-col">
       {/* ── Minimal header ───────────────────────────────────────────────── */}
       <header className="px-6 py-5 flex items-center gap-2">
-        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#1769FF]">
-          <Camera size={14} className="text-white" strokeWidth={2.5} />
+        <div className="flex h-7 w-7 items-center justify-center">
+          <img src="/image.png" alt="Pixara" className="h-full w-full object-contain" />
         </div>
         <span className="text-[15px] font-extrabold tracking-tight text-[#111B33]">
-          Photo<span className="text-[#1769FF]">Share</span>
+          Pixara
         </span>
       </header>
 
@@ -255,7 +255,7 @@ const PinGate: React.FC<PinGateProps> = ({ apiError, isLoading, onSubmit }) => {
 
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="py-5 text-center text-[11.5px] text-[#8290A5]">
-        Protected by PhotoShare &middot; Gallery link is private
+        Protected by Pixara &middot; Gallery link is private
       </footer>
     </div>
   );

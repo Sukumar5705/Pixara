@@ -234,7 +234,7 @@ const PublicGalleryPage: React.FC = () => {
       )}
 
       <footer className="border-t border-[#E4E8EE] bg-white py-5 text-center text-[11.5px] text-[#8290A5]">
-        Protected by PhotoShare &middot; This gallery is private and confidential
+        Protected by Pixara &middot; This gallery is private and confidential
       </footer>
     </div>
   );

@@ -1,4 +1,4 @@
-import { Camera } from "lucide-react";
+
 import { Link } from "react-router-dom";
 import dashboardImage from "./image.png";
 
@@ -10,7 +10,7 @@ export const RightPanel = () => {
       <div className="absolute inset-0 flex items-end justify-center pointer-events-none">
         <img
           src={dashboardImage}
-          alt="PhotoShare Dashboard"
+          alt="Pixara Dashboard"
           className="w-[115%] max-w-none h-full object-contain object-bottom opacity-95 translate-y-4"
         />
         {/* Soft gradient mask so the image fades into the dark background at the top */}
@@ -25,11 +25,11 @@ export const RightPanel = () => {
           to="/"
           className="mb-8 inline-flex items-center gap-2.5 text-[24px] font-extrabold tracking-tight text-white"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#2B5B91] bg-[#12345C]">
-            <Camera size={20} strokeWidth={2.5} />
+          <span className="flex h-10 w-10 items-center justify-center">
+            <img src="/image.png" alt="Pixara" className="h-full w-full object-contain" />
           </span>
           <span>
-            Photo<span className="text-[#1769FF]">Share</span>
+            Pixara
           </span>
         </Link>
 

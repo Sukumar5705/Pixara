@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Link, useNavigate } from "react-router-dom";
-import { CheckCircle2, User, Mail, Camera, AlertCircle } from "lucide-react";
+import { CheckCircle2, User, Mail, AlertCircle } from "lucide-react";
 import { register as registerApi } from "../../api/auth";
 
 import { Input } from "../../components/ui/Input";
@@ -60,10 +60,10 @@ export default function RegisterPage() {
           <div className="w-full max-w-[400px] rounded-3xl bg-white p-6 shadow-xl shadow-black/5 sm:p-8">
             <div className="mb-6 flex justify-center">
               <Link to="/" className="inline-flex items-center gap-2 text-[22px] font-extrabold tracking-tight text-[#111B33]">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#D7E3FA] bg-white text-[#1769FF] shadow-sm">
-                  <Camera size={20} strokeWidth={2.5} />
+                <span className="flex h-10 w-10 items-center justify-center">
+                  <img src="/image.png" alt="Pixara" className="h-full w-full object-contain" />
                 </span>
-                <span>Photo<span className="text-[#1769FF]">Share</span></span>
+                <span>Pixara</span>
               </Link>
             </div>
 
@@ -103,10 +103,10 @@ export default function RegisterPage() {
           {/* Logo */}
           <div className="mb-6 flex justify-center">
             <Link to="/" className="inline-flex items-center gap-2 text-[22px] font-extrabold tracking-tight text-[#111B33]">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#D7E3FA] bg-white text-[#1769FF] shadow-sm">
-                <Camera size={20} strokeWidth={2.5} />
+              <span className="flex h-10 w-10 items-center justify-center">
+                <img src="/image.png" alt="Pixara" className="h-full w-full object-contain" />
               </span>
-              <span>Photo<span className="text-[#1769FF]">Share</span></span>
+              <span>Pixara</span>
             </Link>
           </div>
 
@@ -185,7 +185,7 @@ export default function RegisterPage() {
 
         {/* Footer */}
         <p className="mt-6 text-center text-[12px] text-[#586982]">
-          © {new Date().getFullYear()} PhotoShare. All rights reserved.
+          © {new Date().getFullYear()} Pixara. All rights reserved.
         </p>
       </main>
 

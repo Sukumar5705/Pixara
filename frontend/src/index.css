@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors */
+  --color-brand-navy:        #0F2D53;
+  --color-brand-dark:        #0B2342;
+  --color-brand-blue:        #1769FF;
+  --color-brand-blue-hover:  #0F5BE7;
+  --color-brand-bg:          #F6F6F8;
+  --color-brand-text:        #111B33;
+  --color-brand-secondary:   #586982;
+  --color-brand-muted:       #8290A5;
+  --color-brand-border:      #E4E8EE;
+  --color-brand-success:     #20A66A;
+  --color-brand-error:       #DC4C4C;
+
+  /* Fonts */
+  --font-sans: "Manrope", "Inter", system-ui, sans-serif;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: var(--color-brand-text);
+  background: var(--color-brand-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+/* Keyframe: subtle float for product preview */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Keyframe: fade-slide-up for form */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeSlideUp 0.45s ease both;
+}
+
+/* Keyframe: shimmer for skeleton loading cards */
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* Custom backgrounds for Auth UI */
+.left-glow {
+  background-image: radial-gradient(circle at -4% 7%, rgba(23,105,255,.08) 0 9%, transparent 9.2%), radial-gradient(circle at -8% 104%, rgba(23,105,255,.07) 0 12%, transparent 12.2%);
+}
+
+.right-glow {
+  background-image: radial-gradient(circle at 90% 18%, rgba(48,129,255,.26), transparent 30%), linear-gradient(135deg, #0B2342 0%, #0F2D53 100%);
+}

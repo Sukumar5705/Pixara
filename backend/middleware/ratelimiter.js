@@ -6,6 +6,7 @@ const authLimiter = rateLimit({
     max: 20,
     standardHeaders: true,
     legacyHeaders: false,
+    trustProxy: true,  // ✅ ADD THIS
     message: {
         success: false,
         message: "Too many requests. Please try again later.",

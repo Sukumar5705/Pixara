@@ -11,10 +11,10 @@ const { authLimiter } = require("./middleware/ratelimiter");
 const errorHandler = require("./middleware/errorHandler");
 
 const app = express();
-
+app.set('trust proxy', 1); 
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "https://pixara-sigma.vercel.app/",
+  origin: process.env.FRONTEND_URL || "https://pixara-sigma.vercel.app",
   credentials: true
 }));
 app.use(express.json());
